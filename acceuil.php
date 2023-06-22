@@ -42,7 +42,7 @@
 </div>
 
 <div class="parent4">
-<div class="categorie"><h3>Choississez le vélo qu'il vous faut</h3> </div>
+<div class="categorie"><h3>Choississez le vélo et le temps qui vous convient</h3> </div>
 </div>
 
 <div class="parent5">
@@ -54,9 +54,9 @@
               <div class="conteneur conteneur-1">
                 <h3>Vélo éléctrique</h3>
                 <div class="produits">
-                    <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">
-                    <button class="b1">Ajoutez au panier</button>
+                    <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">   
                 </div>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -66,8 +66,8 @@
                 <h3>Vélo de ville</h3>
                 <div class="produits">
                     <img src="image/ville.jpg" width="300px" height="200pw" alt="">
-                    <button class="b1">Ajoutez au panier</button>
                 </div>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -77,8 +77,8 @@
                 <h3>VTT adulte</h3>
                 <div class="produits">
                     <img src="image/vtt.jpg" width="300px" height="200pw" alt="">
-                    <button class="b1">Ajoutez au panier</button>
                 </div>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -96,8 +96,8 @@
                 <h3>VTT enfant</h3>
                 <div class="produits">
                     <img src="image/vtt enfant.jpg" width="300px" height="200pw" alt="">
-                    <button class="b1">Ajoutez au panier</button>
                 </div>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -107,8 +107,8 @@
                 <h3>Remorque enfant</h3>
                 <div class="produits">
                     <img src="image/remorque.jpg" width="300px" height="200pw" alt="">
-                    <button class="b1">Ajoutez au panier</button>
                 </div>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -118,8 +118,8 @@
                 <h3>Siège enfant</h3>
                 <div class="produits">
                     <img src="image/siege.jpg" width="300px" height="200pw" alt="">
-                    <button class="b1">Ajoutez au panier</button>
                 </div>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*titre*/
 .parent2 {
 display: grid;
 grid-template-columns: repeat(5, 1fr);
@@ -166,7 +166,9 @@ grid-row-gap: 0px;
     justify-content: center;
     align-items: center;
 }
+/*fin titre*/
 
+/*slider*/
 .parent3 {
 display: grid;
 grid-template-columns: repeat(6, 1fr);
@@ -183,7 +185,9 @@ grid-row-gap: 0px;
     justify-content: center;
     align-items: center;
 }
+/*fin slider*/
 
+/*categorie*/
 .parent4 {
 display: grid;
 grid-template-columns: repeat(5, 1fr);
@@ -202,7 +206,9 @@ grid-row-gap: 0px;
     align-items: center;
     text-align: center; 
 }
+/*fin categorie*/
 
+/*card*/
 .parent5 {
 display: grid;
 grid-template-columns: repeat(5, 1fr);
@@ -434,4 +440,5 @@ grid-row-gap: 0px;
 .conteneur > *{
     flex: 1 1 100%;
 }
+/*fin card*/
 </style>
