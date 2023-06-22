@@ -41,7 +41,45 @@
   </div>
 </div>
 
+<div class="parent4">
+<div class="categorie"><h3>Choississez le vélo qu'il vous faut</h3> </div>
+</div>
+
+<div class="parent5">
+    <div class="produits1"> </div>
+    <div class="card"> 
+
+        <div class="card1"> 
+            <div class="position">
+              <div class="conteneur conteneur-1">
+                <div class="produits">
+                    <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card2"> 
+            <div class="position">
+              <div class="conteneur conteneur-1">
+                <div class="produits">
+                    <img src="image/ville.jpg" width="300px" height="200pw" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card3"> 
+            <div class="position">
+              <div class="conteneur conteneur-1">
+                <div class="produits">
+                    <img src="image/vtt.jpg" width="300px" height="200pw" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+
 </body>
+<?php include 'footer.php'; ?>
 </html>
 
 <style>
@@ -97,4 +135,132 @@ grid-row-gap: 0px;
     align-items: center;
 }
 
+.parent4 {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.categorie { grid-area: 1 / 1 / 2 / 6; }
+
+.categorie h3 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.parent5 {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.produits1 { grid-area: 1 / 1 / 2 / 6; }
+.card { grid-area: 1 / 2 / 2 / 6;}
+
+.produits1 {
+    display: flex;
+    justify-content: center;
+}
+
+.card { 
+    display: flex;
+    justify-content: space-a;
+    align-items: center;
+}
+
+.card1{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    
+  }
+  
+  .position{
+    display: flex;
+    align-items: center;
+  }
+  .conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(8, 158, 227);
+    border-radius: 4px;
+    transition: all .3s ease;
+    border-radius: 5%;
+    box-shadow: black 2px 2px 3px;
+  }
+  
+  .conteneur > *{
+    flex: 1 1 100%;
+  }
+
+.card2{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    
+  }
+  
+  .position{
+    display: flex;
+    align-items: center;
+  }
+  .conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 4px;
+    transition: all .3s ease;
+    border-radius: 5%;
+    box-shadow: black 2px 2px 3px;
+  }
+  
+  .conteneur > *{
+    flex: 1 1 100%;
+  }
+
+.card3{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    
+}
+  
+.position{
+    display: flex;
+    align-items: center;
+}
+
+.conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(205, 227, 8);
+    border-radius: 4px;
+    transition: all .3s ease;
+    border-radius: 5%;
+    box-shadow: black 2px 2px 3px;
+}
+  
+.conteneur > *{
+    flex: 1 1 100%;
+}
 </style>
