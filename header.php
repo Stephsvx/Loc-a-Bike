@@ -35,6 +35,17 @@
 </div>
 
 </body>
+
+<script>
+     // Récupérer les références des boutons
+  var compteButton = document.querySelector('.compte');
+  
+  // Ajouter un gestionnaire d'événements de clic au bouton "Compte"
+  compteButton.addEventListener('click', function() {
+    window.location.href = 'connexion.php';
+  });
+ 
+</script>
 </html>
 
 <style>
