@@ -36,10 +36,11 @@ require_once('close.php');
   foreach($result as $location) {
   ?>
   <h2><b><?= $location['locationType']?></b></h2>
-  <p>1 heure: <?= $location['prix1h'] ?> €</p>
-  <p>2 heures: <?= $location['prix2h'] ?> €</p>
-  <p>5 heures: <?= $location['prix5h'] ?> €</p>
-  <p>24 heures: <?= $location['prix24h'] ?> €</p>
+  <select name="prix" id="prix">
+  <option value="prix1h">1 heure: <?= $location['prix1h'] ?> €</option>
+  <option value="prix2h">2 heures: <?= $location['prix2h'] ?> €</option>
+  <option value="prix5h">5 heures: <?= $location['prix5h'] ?> €</option>
+  <option value="prix24h">24 heures: <?= $location['prix24h'] ?> €</option>
   <h3><?= $location['locationDescription'] ?></h3>
   <?php
   }
