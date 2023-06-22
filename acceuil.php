@@ -52,8 +52,10 @@
         <div class="card1"> 
             <div class="position">
               <div class="conteneur conteneur-1">
+                <h3>Vélo éléctrique</h3>
                 <div class="produits">
                     <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">
+                    <button class="b1">Ajoutez au panier</button>
                 </div>
               </div>
             </div>
@@ -61,8 +63,10 @@
           <div class="card2"> 
             <div class="position">
               <div class="conteneur conteneur-1">
+                <h3>Vélo de ville</h3>
                 <div class="produits">
                     <img src="image/ville.jpg" width="300px" height="200pw" alt="">
+                    <button class="b1">Ajoutez au panier</button>
                 </div>
               </div>
             </div>
@@ -70,8 +74,10 @@
           <div class="card3"> 
             <div class="position">
               <div class="conteneur conteneur-1">
+                <h3>VTT adulte</h3>
                 <div class="produits">
                     <img src="image/vtt.jpg" width="300px" height="200pw" alt="">
+                    <button class="b1">Ajoutez au panier</button>
                 </div>
               </div>
             </div>
@@ -87,8 +93,10 @@
         <div class="card4"> 
             <div class="position">
               <div class="conteneur conteneur-1">
+                <h3>VTT enfant</h3>
                 <div class="produits">
                     <img src="image/vtt enfant.jpg" width="300px" height="200pw" alt="">
+                    <button class="b1">Ajoutez au panier</button>
                 </div>
               </div>
             </div>
@@ -96,8 +104,10 @@
           <div class="card5"> 
             <div class="position">
               <div class="conteneur conteneur-1">
+                <h3>Remorque enfant</h3>
                 <div class="produits">
                     <img src="image/remorque.jpg" width="300px" height="200pw" alt="">
+                    <button class="b1">Ajoutez au panier</button>
                 </div>
               </div>
             </div>
@@ -105,8 +115,10 @@
           <div class="card6"> 
             <div class="position">
               <div class="conteneur conteneur-1">
+                <h3>Siège enfant</h3>
                 <div class="produits">
                     <img src="image/siege.jpg" width="300px" height="200pw" alt="">
+                    <button class="b1">Ajoutez au panier</button>
                 </div>
               </div>
             </div>
@@ -201,6 +213,18 @@ grid-row-gap: 0px;
 
 .produits1 { grid-area: 1 / 1 / 2 / 6; }
 .card { grid-area: 1 / 2 / 2 / 6;}
+
+.b1{
+    border: solid 2px white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    background: rgb(36,101,4);
+    background: linear-gradient(180deg, rgba(36,101,4,1) 0%, rgba(95,226,58,1) 50%, rgba(0,255,72,1) 100%);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
 
 .produits1 {
     display: flex;
@@ -381,7 +405,7 @@ grid-row-gap: 0px;
     flex: 1 1 100%;
   }
 
-.card9 {
+.card6 {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
