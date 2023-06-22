@@ -46,7 +46,7 @@
 </div>
 
 <div class="parent5">
-    <div class="produits1"> </div>
+    <div class="produits1"> 
     <div class="card"> 
 
         <div class="card1"> 
@@ -76,10 +76,47 @@
               </div>
             </div>
           </div>
+    </div>
+    </div>
 </div>
 
-</body>
+<div class="parent7">
+    <div class="produits2"> 
+    <div class="cards"> 
+
+        <div class="card4"> 
+            <div class="position">
+              <div class="conteneur conteneur-1">
+                <div class="produits">
+                    <img src="image/vtt enfant.jpg" width="300px" height="200pw" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card5"> 
+            <div class="position">
+              <div class="conteneur conteneur-1">
+                <div class="produits">
+                    <img src="image/remorque.jpg" width="300px" height="200pw" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card6"> 
+            <div class="position">
+              <div class="conteneur conteneur-1">
+                <div class="produits">
+                    <img src="image/siege.jpg" width="300px" height="200pw" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+</div>
+
 <?php include 'footer.php'; ?>
+</body>
 </html>
 
 <style>
@@ -172,7 +209,7 @@ grid-row-gap: 0px;
 
 .card { 
     display: flex;
-    justify-content: space-a;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -235,6 +272,116 @@ grid-row-gap: 0px;
   }
 
 .card3{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    
+}
+  
+.position{
+    display: flex;
+    align-items: center;
+}
+
+.conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(205, 227, 8);
+    border-radius: 4px;
+    transition: all .3s ease;
+    border-radius: 5%;
+    box-shadow: black 2px 2px 3px;
+}
+  
+.conteneur > *{
+    flex: 1 1 100%;
+}
+
+.parent7 {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.produits2 { grid-area: 1 / 1 / 2 / 6; }
+.cards { grid-area: 1 / 2 / 2 / 6;}
+
+.produits2 {
+    display: flex;
+    justify-content: center;
+}
+
+.cards { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card4{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    
+  }
+  
+  .position{
+    display: flex;
+    align-items: center;
+  }
+  .conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(8, 158, 227);
+    border-radius: 4px;
+    transition: all .3s ease;
+    border-radius: 5%;
+    box-shadow: black 2px 2px 3px;
+  }
+  
+  .conteneur > *{
+    flex: 1 1 100%;
+  }
+
+.card5 {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    
+  }
+  
+  .position{
+    display: flex;
+    align-items: center;
+  }
+  .conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 4px;
+    transition: all .3s ease;
+    border-radius: 5%;
+    box-shadow: black 2px 2px 3px;
+  }
+  
+  .conteneur > *{
+    flex: 1 1 100%;
+  }
+
+.card9 {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
