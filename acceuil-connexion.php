@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'header-connexion.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,19 +10,21 @@
 <body>
 
 <div class="parent2">
-    <div class="titre"> <h1>Bienvenue chez Loc'A Bike</h1> <br/> <h2>Pour 1h ou pour plusieurs jours, on a le vélo qu'il vous faut</h2> </div>   
-</div>
+        <div class="logo"><img src="image/logo.png" alt="logo du site" height="200px" width="200px"> </div> 
+        <div class="titre" ><h2>Pour 1h ou pour plusieurs jours, on a le vélo qu'il vous faut</h2> <br/> <h2>Pour connaitre nos tarifs connectez vous ou inscrivez vous</h2> </div>
+    </div>
 
 <div class="parent3">
 <div class="slider"> </div>
 <div class="container">
-    <img name="image" width="1613" height="780">
+    <img name="image" width="1920px" height="1080px">
     <script>
      var image = [];
         image[0] = "image/image1.jpg";
         image[1] = "image/image2.webp";
         image[2] = "image/image3.jpg";
         image[3] = "image/image4.jpg";
+        image[4] = "image/image2.jpg";
         var i = 0;
         var timer = 3000;
        
@@ -56,7 +58,7 @@
                 <div class="produits">
                     <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">   
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
             </div>
           </div>
@@ -67,7 +69,7 @@
                 <div class="produits">
                     <img src="image/ville.jpg" width="300px" height="200pw" alt="">
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
             </div>
           </div>
@@ -78,7 +80,7 @@
                 <div class="produits">
                     <img src="image/vtt.jpg" width="300px" height="200pw" alt="">
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
             </div>
           </div>
@@ -97,7 +99,7 @@
                 <div class="produits">
                     <img src="image/vtt enfant.jpg" width="300px" height="200pw" alt="">
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
             </div>
           </div>
@@ -108,7 +110,7 @@
                 <div class="produits">
                     <img src="image/remorque.jpg" width="300px" height="200pw" alt="">
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
             </div>
           </div>
@@ -119,7 +121,7 @@
                 <div class="produits">
                     <img src="image/siege.jpg" width="300px" height="200pw" alt="">
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
             </div>
           </div>
@@ -142,29 +144,28 @@
 }
 /*titre*/
 .parent2 {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
+    
+.logo { grid-area: 1 / 3 / 2 / 4; }
+.titre { grid-area: 2 / 1 / 3 / 6; }
 
-.titre { grid-area: 1 / 1 / 2 / 6; }
-
-.titre h1 {
-    font-size: 100px;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .titre h2 {
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 /*fin titre*/
 

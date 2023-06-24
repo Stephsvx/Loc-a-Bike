@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loc'A Bike</title>
+    <script src="https://kit.fontawesome.com/d2de6ecd94.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
 </head>
 <body>
     
 <div class="container">
-    <form action="connexion-utilisateusr.php" method="POST">
-        <p>Connexion</p>
+    <form action="inscription-utilisateurs.php" method="POST">
+        <p>Inscription</p>
+
+            <input type="text" id="nom" name="nom" placeholder="nom" required><br>
+
+            <input type="text" id="prenom" name="prenom" placeholder="prenom" required><br>
 
             <input type="text" id="email" name="email" placeholder="email" required><br>
 
             <input type="text" id="motdepasse" name="motdepasse" placeholder="motdepasse" required><br>
 
-            <input type="submit" name="submit" value="Connexion"><br>
+            <input type="submit" name="submit" value="Inscription"><br>
 
-            <a href="inscription.php">Pas encore client inscrivez-vous</a>
+            <a href="connexion.php">déjà client connectez-vous</a>
     </form>
 </div>
 
@@ -33,7 +39,7 @@
 }
 
 body {
-	background-image: url(image/connexion2.jpg);
+	background-image: url(image/connexion.jpg);
 	background-size: cover;
 	height: 100vh;
 	font-family: arial, sans-serif;
@@ -61,7 +67,7 @@ form {
 }
 
 p {
-	color: white;
+	color: black;
 	font-weight: 500;
 	opacity: .7;
 	font-size: 1.4rem;
@@ -71,7 +77,7 @@ p {
 	
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
 	font-size: 12px;
 }
   

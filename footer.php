@@ -48,9 +48,10 @@ grid-row-gap: 0px;
 
 .footer {
     display: flex;
-    height: 100px;
-    background: rgb(0,255,72);
-    background: linear-gradient(90deg, rgba(0,255,72,1) 0%, rgba(95,226,58,1) 50%, rgba(36,101,4,1) 100%);
+    height: 300px;
+    background-image: url(image/fond.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .politique {

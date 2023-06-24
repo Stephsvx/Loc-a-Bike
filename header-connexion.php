@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,25 +10,12 @@
     
 <div class="parent">
     <div class="header"> </div>
-    <div class="logo"><img src="image/logo.png" alt="logo du site" height="200px" width="200px"> </div>
     <div class="boutons"> 
           
-        <button class="compte">
-            <i class="fas fa-user"></i>
-            Compte
+        <button class="connexion">
+            <a href="connexion.php"> <i class="fas fa-user"></i>
+            Connexion / inscription </a>
         </button>
-
-        <button class="panier">
-            <i class="fas fa-shopping-cart"></i>
-            Panier
-        </button>
-
-        <button class="deconnexion">
-            <i class="fa-solid fa-power-off"></i>
-              Deconnexion
-
-        </button>
-
     </div>
 </div>
 
@@ -56,6 +41,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .parent {
@@ -67,29 +53,24 @@ grid-row-gap: 0px;
 }
 
 .header { grid-area: 1 / 1 / 2 / 6; }
-.logo { grid-area: 1 / 3 / 2 / 4; }
 .boutons { grid-area: 1 / 5 / 2 / 6; }
 
 .header {
     display: flex;
-    height: 200px;
-    background: rgb(36,101,4);
-    background: linear-gradient(90deg, rgba(36,101,4,1) 0%, rgba(95,226,58,1) 50%, rgba(0,255,72,1) 100%); 
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 300px;
+    background-image: url(image/fond2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .boutons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    color: white;
 }
 
-.compte {
+.connexion {
   border: none;
   background: none;
   cursor: pointer;
@@ -99,35 +80,12 @@ grid-row-gap: 0px;
   font-family: 'Roboto', sans-serif;
 }
 
-.panier {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 5px;
-    color: white;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.deconnexion {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 5px;
-    color: white;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.panier i {
+.connexion i {
     font-size: 40px;
+    color: white;
 }
 
-.compte i {
-  font-size: 40px;
-}
-
-.deconnexion i {
-    font-size: 40px;
+.connexion a {
+    color: white;
 }
 </style>
