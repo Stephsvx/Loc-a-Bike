@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['prenom'] = $row['prenom'];
             $conn->close();
             
-            header("Location: acceuil-connexion.php");
+            header("Location: acceuil-clients.php");
             exit();
         } else {
            

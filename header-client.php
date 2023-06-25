@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+$prenom = isset($_SESSION['prenom']) ? $_SESSION['prenom'] : '';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +19,7 @@
           
         <button class="compte">
             <i class="fas fa-user"></i>
-            Compte
+            <?php echo $prenom; ?>
         </button>
 
         <button class="panier">
