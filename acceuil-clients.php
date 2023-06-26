@@ -17,7 +17,7 @@
 <div class="parent3">
 <div class="slider"> </div>
 <div class="container">
-    <img name="image" width="1920px" height="1080px">
+    <img name="image" width="1280px" height="782px">
     <script>
      var image = [];
         image[0] = "image/image1.jpg";
@@ -48,7 +48,7 @@
 </div>
 
 <div class="parent5">
-    <div class="produits1"> 
+  <div class="produits1"> 
     <div class="card"> 
 
         <div class="card1"> 
@@ -58,6 +58,16 @@
                 <div class="produits">
                     <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">   
                 </div>
+                <div class="menu">
+                  <div class="filtre">
+                      <select id="filtre-temps">
+                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h</option>
+                        <option value="5">5h</option>
+                        <option value="24">24h</option>
+                      </select>
+                  </div>
+                  </div>
                 <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
@@ -69,9 +79,20 @@
                 <div class="produits">
                     <img src="image/ville.jpg" width="300px" height="200pw" alt="">
                 </div>
+                <div class="menu">
+                  <div class="filtre">
+                      <select id="filtre-temps">
+                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h</option>
+                        <option value="5">5h</option>
+                        <option value="24">24h</option>
+                      </select>
+                  </div>
+                </div>
                 <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
+          </div>
           </div>
           <div class="card3"> 
             <div class="position">
@@ -80,12 +101,22 @@
                 <div class="produits">
                     <img src="image/vtt.jpg" width="300px" height="200pw" alt="">
                 </div>
+                <div class="menu">
+                  <div class="filtre">
+                      <select id="filtre-temps">
+                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h</option>
+                        <option value="5">5h</option>
+                        <option value="24">24h</option>
+                      </select>
+                  </div>
+                </div>
                 <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
     </div>
-    </div>
+  </div>
 </div>
 
 <div class="parent7">
@@ -99,6 +130,16 @@
                 <div class="produits">
                     <img src="image/vtt enfant.jpg" width="300px" height="200pw" alt="">
                 </div>
+                <div class="menu">
+                  <div class="filtre">
+                      <select id="filtre-temps">
+                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h</option>
+                        <option value="5">5h</option>
+                        <option value="24">24h</option>
+                      </select>
+                  </div>
+                </div>
                 <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
@@ -110,6 +151,16 @@
                 <div class="produits">
                     <img src="image/remorque.jpg" width="300px" height="200pw" alt="">
                 </div>
+                <div class="menu">
+                  <div class="filtre">
+                      <select id="filtre-temps">
+                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h</option>
+                        <option value="5">5h</option>
+                        <option value="24">24h</option>
+                      </select>
+                  </div>
+                  </div>
                 <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
@@ -120,6 +171,16 @@
                 <h3>Siège enfant</h3>
                 <div class="produits">
                     <img src="image/siege.jpg" width="300px" height="200pw" alt="">
+                </div>
+                <div class="menu">
+                  <div class="filtre">
+                      <select id="filtre-temps">
+                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h</option>
+                        <option value="5">5h</option>
+                        <option value="24">24h</option>
+                      </select>
+                  </div>
                 </div>
                 <button class="b1">Ajoutez au panier</button>
               </div>

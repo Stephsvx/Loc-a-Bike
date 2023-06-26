@@ -17,7 +17,7 @@
 <div class="parent3">
 <div class="slider"> </div>
 <div class="container">
-    <img name="image" width="1920px" height="1080px">
+    <img name="image" width="1280px" height="782px">
     <script>
      var image = [];
         image[0] = "image/image1.jpg";
