@@ -17,28 +17,53 @@
 
 -- Listage de la structure de la base pour locabikedb
 DROP DATABASE IF EXISTS `locabikedb`;
-CREATE DATABASE IF NOT EXISTS `locabikedb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE IF NOT EXISTS `locabikedb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `locabikedb`;
 
 -- Listage de la structure de table locabikedb. location
 DROP TABLE IF EXISTS `location`;
 CREATE TABLE IF NOT EXISTS `location` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `locationType` varchar(50) NOT NULL,
-  `prix1h` float NOT NULL DEFAULT '0',
-  `prix2h` float NOT NULL DEFAULT '0',
-  `prix5h` float NOT NULL DEFAULT '0',
-  `prix24h` float NOT NULL DEFAULT '0',
-  `locationDescription` varchar(50) NOT NULL,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `locationType` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `prix1h` float NOT NULL,
+  `prix2h` float NOT NULL,
+  `prix5h` float NOT NULL,
+  `prix24h` float NOT NULL,
+  `locationDescription` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='au secours';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Listage des données de la table locabikedb.location : ~4 rows (environ)
 INSERT INTO `location` (`id`, `locationType`, `prix1h`, `prix2h`, `prix5h`, `prix24h`, `locationDescription`) VALUES
 	(1, 'Vélo Adulte', 6, 9, 12, 18, 'Panier, antivol et porte bébé inclus'),
-	(2, 'Vélo Enfant', 5, 8, 10, 15, 'Vélo 20″ ou 24″, antivol et casque inclus'),
+	(2, 'Vélo Enfant', 5, 8, 10, 15, 'élo 20" ou 24", antivol et casque inclus'),
 	(3, 'Remorque Enfant', 5, 8, 10, 15, 'Remorque pouvant contenir 2 enfants'),
 	(4, 'Vélo Électrique', 15, 20, 25, 35, 'Panier et antivol inclus');
+
+-- Listage de la structure de table locabikedb. panier
+DROP TABLE IF EXISTS `panier`;
+CREATE TABLE IF NOT EXISTS `panier` (
+  `idProduit` int NOT NULL AUTO_INCREMENT,
+  `nomProduit` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `prixProduit` float DEFAULT NULL,
+  `quantite` int DEFAULT NULL,
+  PRIMARY KEY (`idProduit`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Listage des données de la table locabikedb.panier : ~0 rows (environ)
+
+-- Listage de la structure de table locabikedb. users
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `prenom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `motdepasse` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Listage des données de la table locabikedb.users : ~0 rows (environ)
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
