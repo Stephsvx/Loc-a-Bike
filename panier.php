@@ -63,6 +63,7 @@ ajouterProduitAuPanier(1, 'Produit 1', 10.99);
 ajouterProduitAuPanier(2, 'Produit 2', 5.99);
 ajouterProduitAuPanier(3, 'Produit 3', 8.99);
 
+
 // Afficher le contenu du panier
 afficherPanier();
 ?>
