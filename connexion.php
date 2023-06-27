@@ -1,3 +1,5 @@
+<?php include 'connexion-utilisateurs.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +10,12 @@
 <body>
     
 <div class="container">
-    <form action="connexion-utilisateusr.php" method="POST">
+    <form action="connexion-utilisateurs.php" method="POST">
         <p>Connexion</p>
 
             <input type="text" id="email" name="email" placeholder="email" required><br>
 
-            <input type="text" id="motdepasse" name="motdepasse" placeholder="motdepasse" required><br>
+            <input type="password" id="motdepasse" name="motdepasse" placeholder="motdepasse" required><br>
 
             <input type="submit" name="submit" value="Connexion"><br>
 

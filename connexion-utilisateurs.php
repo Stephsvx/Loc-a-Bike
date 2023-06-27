@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "locabikebd";
+    $dbname = "locabikedb";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['prenom'] = $row['prenom'];
             $conn->close();
             
-            header("Location: acceuil-clients.php");
+            header ("Location: acceuil-clients.php");
             exit();
         } else {
            

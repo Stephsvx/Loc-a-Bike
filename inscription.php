@@ -1,3 +1,5 @@
+<?php include 'inscription-utilisateurs.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +21,7 @@
 
             <input type="text" id="email" name="email" placeholder="email" required><br>
 
-            <input type="text" id="motdepasse" name="motdepasse" placeholder="motdepasse" required><br>
+            <input type="password" id="motdepasse" name="motdepasse" placeholder="motdepasse" required><br>
 
             <input type="submit" name="submit" value="Inscription"><br>
 

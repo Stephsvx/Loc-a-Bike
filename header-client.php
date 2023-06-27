@@ -49,10 +49,14 @@ $prenom = isset($_SESSION['prenom']) ? $_SESSION['prenom'] : '';
 <script>
      // Récupérer les références des boutons
   var compteButton = document.querySelector('.compte');
+  var compteButton = document.querySelector('.panier');
   
   // Ajouter un gestionnaire d'événements de clic au bouton "Compte"
   compteButton.addEventListener('click', function() {
     window.location.href = 'connexion.php';
+  });
+  compteButton.addEventListener('click', function() {
+    window.location.href = 'panier.php';
   });
  
 </script>
