@@ -26,12 +26,20 @@ $prenom = isset($_SESSION['prenom']) ? $_SESSION['prenom'] : '';
             <i class="fas fa-shopping-cart"></i>
             Panier
         </button>
-
-        <button class="deconnexion">
+    <?php 
+    if (isset($_POST['deco'])) {
+        session_unset();
+        session_destroy();
+        header("location: acceuil-connexion.php");
+        exit();
+    }
+    ?>
+    <form method="POST" action="">
+        <button type="submit" name="deco" class="deconnexion">
             <i class="fa-solid fa-power-off"></i>
               Deconnexion
-
         </button>
+    </form>
 
     </div>
 </div>

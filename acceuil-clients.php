@@ -61,10 +61,10 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
-                        <option value="2">2h</option>
-                        <option value="5">5h</option>
-                        <option value="24">24h</option>
+                        <option value="1">1h-15€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h-20€</option>
+                        <option value="5">5h-25€</option>
+                        <option value="24">24h-35€</option>
                       </select>
                   </div>
                   </div>
@@ -82,10 +82,10 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
-                        <option value="2">2h</option>
-                        <option value="5">5h</option>
-                        <option value="24">24h</option>
+                        <option value="1">1h-6€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h-9€</option>
+                        <option value="5">5h-12€</option>
+                        <option value="24">24h-18€</option>
                       </select>
                   </div>
                 </div>
@@ -104,10 +104,10 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
-                        <option value="2">2h</option>
-                        <option value="5">5h</option>
-                        <option value="24">24h</option>
+                        <option value="1">1h-6€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h-9€</option>
+                        <option value="5">5h-12€</option>
+                        <option value="24">24h-18€</option>
                       </select>
                   </div>
                 </div>
@@ -133,10 +133,10 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
-                        <option value="2">2h</option>
-                        <option value="5">5h</option>
-                        <option value="24">24h</option>
+                        <option value="1">1h-5€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h-8€</option>
+                        <option value="5">5h-10€</option>
+                        <option value="24">24h-15€</option>
                       </select>
                   </div>
                 </div>
@@ -154,10 +154,10 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
-                        <option value="2">2h</option>
-                        <option value="5">5h</option>
-                        <option value="24">24h</option>
+                        <option value="1">1h-5€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h-8€</option>
+                        <option value="5">5h-10€</option>
+                        <option value="24">24h-15€</option>
                       </select>
                   </div>
                   </div>
@@ -175,10 +175,10 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
-                        <option value="2">2h</option>
-                        <option value="5">5h</option>
-                        <option value="24">24h</option>
+                        <option value="1">1h-5€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="2">2h-8€</option>
+                        <option value="5">5h-10€</option>
+                        <option value="24">24h-15€</option>
                       </select>
                   </div>
                 </div>
