@@ -1,14 +1,15 @@
 <?php
+require_once('connect.php');
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "locabikedb";
 
-//connection a la base 
-
-try{
-$db = new PDO('mysql:host=localhost;dbname=locabikedb', 'root','');
-$db->exec('SET NAMES "UTF8"');
-
-}catch (PDOException $e){
-    echo 'Erreur : '. $e->getMessage();
-    die();
-}
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+} 
 
 ?>

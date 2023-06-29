@@ -1,14 +1,18 @@
-<<<<<<< Updated upstream:acceuil.php
-<?php include 'header.php'; ?>
-=======
-<?php include 'header-client.php'; ?>
 <?php
 require_once('connect.php');
-require 'db.class.php';
-$DB = new DB();
-require_once('close.php');
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "locabikedb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+} 
+
 ?>
->>>>>>> Stashed changes:acceuil-clients.php
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,20 +69,18 @@ require_once('close.php');
                 <div class="produits">
                     <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">
                 </div>
-<<<<<<< Updated upstream:acceuil.php
-=======
                 <?php
                 require_once('connect.php');
-                require_once ('locaprix.class.php');
-                $locationvelo = $DB->requete('SELECT * FROM locationvelo WHERE id=1');
+                $sql= "SELECT * FROM locationvelo WHERE id=1";
+                $locationvelo = $conn->query($sql);
                 foreach($locationvelo as $prix1):
                 ?>
                 <form action="panier.php" method="post">
                 <select name="prix1" id="prix1">
-                <option value="prix1h">1 heure: <?= $prix1->prix1h ?> €</option>
-                <option value="prix2h">2 heures: <?= $prix1->prix2h ?> €</option>
-                <option value="prix5h">5 heures: <?= $prix1->prix5h ?> €</option>
-                <option value="prix24h">24 heures: <?= $prix1->prix24h ?> €</option>
+                <option value="prixVeloElectrique1h">1 heure: <?= $prix1->prix1h ?> €</option>
+                <option value="prixVeloElectrique2h">2 heures: <?= $prix1->prix2h ?> €</option>
+                <option value="prixVeloElectrique5h">5 heures: <?= $prix1->prix5h ?> €</option>
+                <option value="prixVeloElectrique24h">24 heures: <?= $prix1->prix24h ?> €</option>
                 </select>
                 </div>
                 <button class="b1" input type="submit">
@@ -89,7 +91,6 @@ require_once('close.php');
                 endforeach;
                 require_once('close.php');
                 ?>
->>>>>>> Stashed changes:acceuil-clients.php
               </div>
             </div>
           </div>
@@ -99,20 +100,19 @@ require_once('close.php');
                 <div class="produits">
                     <img src="image/ville.jpg" width="300px" height="200pw" alt="">
                 </div>
-<<<<<<< Updated upstream:acceuil.php
-=======
                 <?php
                 require_once('connect.php');
                 require_once ('locaprix.class.php');
-                $locationvelo = $DB->requete('SELECT * FROM locationvelo WHERE id=2');
+                $sql= "SELECT * FROM locationvelo WHERE id=2";
+                $locationvelo = $conn->query($sql);
                 foreach($locationvelo as $prix2):
                 ?>
                 <form action="panier.php" method="post">
                 <select name="prix2" id="prix2">
-                <option value="prix1h">1 heure: <?= $prix2->prix1h ?> €</option>
-                <option value="prix2h">2 heures: <?= $prix2->prix2h ?> €</option>
-                <option value="prix5h">5 heures: <?= $prix2->prix5h ?> €</option>
-                <option value="prix24h">24 heures: <?= $prix2->prix24h ?> €</option>
+                <option value="prixVeloVille1h">1 heure: <?= $prix2->prix1h ?> €</option>
+                <option value="prixVeloVille2h">2 heures: <?= $prix2->prix2h ?> €</option>
+                <option value="prixVeloVille5h">5 heures: <?= $prix2->prix5h ?> €</option>
+                <option value="prixVeloVille24h">24 heures: <?= $prix2->prix24h ?> €</option>
                 </select>
                 </div>
                 <button class="b1" input type="submit">
@@ -123,7 +123,6 @@ require_once('close.php');
                 endforeach;
                 require_once('close.php');
                 ?>
->>>>>>> Stashed changes:acceuil-clients.php
               </div>
             </div>
           </div>
