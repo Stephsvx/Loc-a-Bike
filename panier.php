@@ -128,12 +128,10 @@ if($prix == 0 && filter_input(INPUT_POST, 'prix1') !== NULL) {
               } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
               }
-              
-              $conn->close();
-$result = $sql="SELECT * FROM panier";
-$result = $conn->query($sql);
-$idsAll = $result->fetch_assoc();
-$ids = $idsAll['id'];
+            $result = $sql="SELECT * FROM panier";
+            $result = $conn->query($sql);
+            $idsAll = $result->fetch_assoc();
+            $ids = $idsAll['id'];
 if(empty($ids)){
     $prods = array();
 }else{
