@@ -68,7 +68,7 @@
                       </select>
                   </div>
                   </div>
-                <button class="b1">Ajoutez au panier</button>
+                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@
                       </select>
                   </div>
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
                       </select>
                   </div>
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@
                       </select>
                   </div>
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@
                       </select>
                   </div>
                   </div>
-                <button class="b1">Ajoutez au panier</button>
+                  <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@
                       </select>
                   </div>
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
               </div>
             </div>
           </div>
