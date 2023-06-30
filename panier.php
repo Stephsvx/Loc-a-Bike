@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include 'header-client.php'; ?>
 
 
@@ -18,3 +19,5 @@
 <style>
 
 </style>
+=======
+>>>>>>> 8b00c78dd04e2e5283bcfe7a31410f5aa723934e
