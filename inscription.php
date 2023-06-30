@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d2de6ecd94.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="test.css">
-    <title>Document</title>
+    <title>Loc'A Bike</title>
 </head>
 <body>
     

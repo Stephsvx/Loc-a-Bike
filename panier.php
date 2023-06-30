@@ -1,5 +1,7 @@
 <?php include 'header-client.php'; ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +11,8 @@
 </head>
 <body>
     
-
-<?php include 'footer.php'; ?>
 </body>
+<?php include 'footer.php'; ?>
 </html>
 
 <style>
