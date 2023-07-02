@@ -68,7 +68,7 @@
                       </select>
                   </div>
                   </div>
-                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -82,14 +82,14 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h-6€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="1">1h-6€</option>  
                         <option value="2">2h-9€</option>
                         <option value="5">5h-12€</option>
                         <option value="24">24h-18€</option>
                       </select>
                   </div>
                 </div>
-                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -104,14 +104,14 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h-6€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="1">1h-6€</option>  <
                         <option value="2">2h-9€</option>
                         <option value="5">5h-12€</option>
                         <option value="24">24h-18€</option>
                       </select>
                   </div>
                 </div>
-                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -133,14 +133,14 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h-5€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="1">1h-5€</option>  
                         <option value="2">2h-8€</option>
                         <option value="5">5h-10€</option>
                         <option value="24">24h-15€</option>
                       </select>
                   </div>
                 </div>
-                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -154,14 +154,14 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h-5€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
+                        <option value="1">1h-5€</option>  
                         <option value="2">2h-8€</option>
                         <option value="5">5h-10€</option>
                         <option value="24">24h-15€</option>
                       </select>
                   </div>
                   </div>
-                  <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>
@@ -175,14 +175,13 @@
                 <div class="menu">
                   <div class="filtre">
                       <select id="filtre-temps">
-                        <option value="1">1h-5€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
-                        <option value="2">2h-8€</option>
+                        <option value="1">1h-5€</option>  
                         <option value="5">5h-10€</option>
                         <option value="24">24h-15€</option>
                       </select>
                   </div>
                 </div>
-                <a href="ajouter-au-panier.php"><button class="b1">Ajoutez au panier</button></a>
+                <button class="b1">Ajoutez au panier</button>
               </div>
             </div>
           </div>

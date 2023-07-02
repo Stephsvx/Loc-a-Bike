@@ -1,4 +1,4 @@
-<?php include 'header.php';
+<?php include 'header-client.php';
 
 require_once('connect.php');
 
