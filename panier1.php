@@ -1,9 +1,9 @@
 <?php
-require ('connect.php');
+require ('connect1.php');
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "locabikedb";
+$dbname = "locabikedb1";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -154,3 +154,6 @@ foreach ($prods as $prodss):
     ?>
 </table>
 <a href="./acceuil-clients.php">Retourner Au catalogue</a>
+<?php
+require_once ("close1.php");
+?>

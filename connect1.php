@@ -1,9 +1,9 @@
 <?php
-require_once('connect.php');
+require_once('connect1.php');
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "locabikedb";
+$dbname = "locabikedb1";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

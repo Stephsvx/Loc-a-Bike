@@ -1,9 +1,9 @@
 <?php
-require_once('connect.php');
+require_once('connect1.php');
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "locabikedb";
+$dbname = "locabikedb1";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -70,17 +70,17 @@ if ($conn->connect_error) {
                     <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">
                 </div>
                 <?php
-                require_once('connect.php');
+                require_once('connect1.php');
                 $sql= "SELECT * FROM locationvelo WHERE id=1";
-                $locationvelo = $conn->query($sql);
-                foreach($locationvelo as $prix1):
+                $locationvelo1 = $conn->query($sql);
+                foreach($locationvelo1 as $prix1):
                 ?>
-                <form action="panier.php" method="post">
+                <form action="panier1.php" method="post">
                 <select name="prix1" id="prix1">
-                <option value="prixVeloElectrique1h">1 heure: <?= $prix1->prix1h ?> €</option>
-                <option value="prixVeloElectrique2h">2 heures: <?= $prix1->prix2h ?> €</option>
-                <option value="prixVeloElectrique5h">5 heures: <?= $prix1->prix5h ?> €</option>
-                <option value="prixVeloElectrique24h">24 heures: <?= $prix1->prix24h ?> €</option>
+                <option value="prixVeloElectrique1h">1 heure: <?= $prix1['prix1h'] ?> €</option>
+                <option value="prixVeloElectrique2h">2 heures: <?= $prix1['prix2h'] ?> €</option>
+                <option value="prixVeloElectrique5h">5 heures: <?= $prix1['prix5h'] ?> €</option>
+                <option value="prixVeloElectrique24h">24 heures: <?= $prix1['prix24h'] ?> €</option>
                 </select>
                 </div>
                 <button class="b1" input type="submit">
@@ -89,7 +89,7 @@ if ($conn->connect_error) {
                 </form>
                 <?php
                 endforeach;
-                require_once('close.php');
+                require_once('close1.php');
                 ?>
               </div>
             </div>
@@ -101,18 +101,17 @@ if ($conn->connect_error) {
                     <img src="image/ville.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <?php
-                require_once('connect.php');
-                require_once ('locaprix.class.php');
+                require_once('connect1.php');
                 $sql= "SELECT * FROM locationvelo WHERE id=2";
-                $locationvelo = $conn->query($sql);
-                foreach($locationvelo as $prix2):
+                $locationvelo2 = $conn->query($sql);
+                foreach($locationvelo2 as $prix2):
                 ?>
-                <form action="panier.php" method="post">
+                <form action="panier1.php" method="post">
                 <select name="prix2" id="prix2">
-                <option value="prixVeloVille1h">1 heure: <?= $prix2->prix1h ?> €</option>
-                <option value="prixVeloVille2h">2 heures: <?= $prix2->prix2h ?> €</option>
-                <option value="prixVeloVille5h">5 heures: <?= $prix2->prix5h ?> €</option>
-                <option value="prixVeloVille24h">24 heures: <?= $prix2->prix24h ?> €</option>
+                <option value="prixVeloVille1h">1 heure: <?= $prix2['prix1h'] ?> €</option>
+                <option value="prixVeloVille2h">2 heures: <?= $prix2['prix2h'] ?> €</option>
+                <option value="prixVeloVille5h">5 heures: <?= $prix2['prix5h'] ?> €</option>
+                <option value="prixVeloVille24h">24 heures: <?= $prix2['prix24h'] ?> €</option>
                 </select>
                 </div>
                 <button class="b1" input type="submit">
@@ -121,7 +120,7 @@ if ($conn->connect_error) {
                 </form>
                 <?php
                 endforeach;
-                require_once('close.php');
+                require_once('close1.php');
                 ?>
               </div>
             </div>
@@ -138,7 +137,7 @@ if ($conn->connect_error) {
 </div>
 
 </body>
-<?php include 'footer.php'; ?>
+<?php include 'footer1.php'; ?>
 </html>
 
 <style>
