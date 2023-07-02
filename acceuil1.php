@@ -68,8 +68,7 @@ if ($conn->connect_error) {
               <div class="conteneur conteneur-1">
                 <div class="produits">
                     <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">
-                </div>
-                <?php
+                    <?php
                 require_once('connect1.php');
                 $sql= "SELECT * FROM locationvelo WHERE id=1";
                 $locationvelo1 = $conn->query($sql);
@@ -91,6 +90,8 @@ if ($conn->connect_error) {
                 endforeach;
                 require_once('close1.php');
                 ?>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -99,8 +100,7 @@ if ($conn->connect_error) {
               <div class="conteneur conteneur-1">
                 <div class="produits">
                     <img src="image/ville.jpg" width="300px" height="200pw" alt="">
-                </div>
-                <?php
+                    <?php
                 require_once('connect1.php');
                 $sql= "SELECT * FROM locationvelo WHERE id=2";
                 $locationvelo2 = $conn->query($sql);
@@ -122,6 +122,8 @@ if ($conn->connect_error) {
                 endforeach;
                 require_once('close1.php');
                 ?>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -130,6 +132,28 @@ if ($conn->connect_error) {
               <div class="conteneur conteneur-1">
                 <div class="produits">
                     <img src="image/vtt.jpg" width="300px" height="200pw" alt="">
+                    <?php
+                require_once('connect1.php');
+                $sql= "SELECT * FROM locationvelo WHERE id=3";
+                $locationvelo3 = $conn->query($sql);
+                foreach($locationvelo3 as $prix3):
+                ?>
+                <form action="panier1.php" method="post">
+                <select name="prix3" id="prix3">
+                <option value="prixVTTAdulte1h">1 heure: <?= $prix2['prix1h'] ?> €</option>
+                <option value="prixVTTAdulte2h">2 heures: <?= $prix2['prix2h'] ?> €</option>
+                <option value="prixVTTAdulte5h">5 heures: <?= $prix2['prix5h'] ?> €</option>
+                <option value="prixVTTAdulte24h">24 heures: <?= $prix2['prix24h'] ?> €</option>
+                </select>
+                </div>
+                <button class="b1" input type="submit">
+                Ajoutez au panier</button>
+                </div>
+                </form>
+                <?php
+                endforeach;
+                require_once('close1.php');
+                ?>
                 </div>
               </div>
             </div>

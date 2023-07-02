@@ -48,13 +48,20 @@ DROP TABLE IF EXISTS `panier`;
 CREATE TABLE IF NOT EXISTS `panier` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nom` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
-  `prix` decimal(20,6) NOT NULL DEFAULT '1.000000',
+  `prix` float NOT NULL DEFAULT '0',
   `heures` int NOT NULL DEFAULT '2',
   `locationImage` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=167 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table locabikedb1.panier: ~0 rows (approximately)
+INSERT INTO `panier` (`id`, `nom`, `prix`, `heures`, `locationImage`) VALUES
+	(161, 'Vélo Électrique', 15, 1, './loca1.jpeg'),
+	(162, 'Vélo Électrique', 15, 1, './loca1.jpeg'),
+	(163, 'Vélo Électrique', 15, 1, './loca1.jpeg'),
+	(164, 'Vélo Électrique', 15, 1, './loca1.jpeg'),
+	(165, 'Vélo Électrique', 15, 1, './loca1.jpeg'),
+	(166, 'Vélo Électrique', 15, 1, './loca1.jpeg');
 
 -- Dumping structure for table locabikedb1.users
 DROP TABLE IF EXISTS `users`;

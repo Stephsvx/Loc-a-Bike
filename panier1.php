@@ -40,20 +40,17 @@ if (!$conn) {
         <th>Image</th>
         <th>Produit</th>
         <th>Prix</th>
-        <th>Quantité</th>
+        <th>Heures</th>
+        <th>ID</th>
     </tr>
-
 <?php
 $prix = 0;
 $heures = 0;
-/*6 9 12 18
-5 8 10 15
-5 8 10 15
-15 20 25 35 */
 
 if($prix == 0 && filter_input(INPUT_POST, 'prix1') !== NULL) {
     $prix = filter_input(INPUT_POST, 'prix1');
     $nom = "Vélo Électrique";
+    $locationImage = "./loca1.jpeg";
     if($prix == "prixVeloElectrique1h"){
         $heures = 1;
         $prix = 15;
@@ -73,55 +70,111 @@ if($prix == 0 && filter_input(INPUT_POST, 'prix1') !== NULL) {
 }
     elseif($prix == 0 && filter_input(INPUT_POST, 'prix2') !== NULL){
         $prix = filter_input(INPUT_POST, 'prix2');
-        $nom = "Vélo Enfant";
-        if($prix == 5){
+        $nom = "Vélo Ville";
+        $locationImage = "loca2.jpg";
+        if($prix == "prixVeloVille1h"){
             $heures = 1;
+            $prix = 5;
         }
-        elseif($prix == 8){
+        elseif($prix == "prixVeloVille2h"){
             $heures = 2;
+            $prix = 8;
         }
-        elseif($prix == 10){
+        elseif($prix == "prixVeloVille5h"){
             $heures = 5;
+            $prix = 10;
         }
-        elseif($prix == 15){
+        elseif($prix == "prixVeloVille24h"){
             $heures = 24;
+            $prix = 15;
         }
     }
         elseif($prix == 0 && filter_input(INPUT_POST, 'prix3') !== NULL){
             $prix = filter_input(INPUT_POST, 'prix3');
-            $nom = "Remorque Enfant";
-            if($prix == 5){
+            $nom = "VTT Adulte";
+            $locationImage = "loca3.jpg";
+            if($prix == "prixVTTAdulte1h"){
                 $heures = 1;
+                $prix = 6;
             }
-            elseif($prix == 8){
+            elseif($prix == "prixVTTAdulte2h"){
                 $heures = 2;
+                $prix = 9;
             }
-            elseif($prix == 10){
+            elseif($prix == "prixVTTAdulte5h"){
                 $heures = 5;
+                $prix = 12;
             }
-            elseif($prix == 15){
+            elseif($prix == "prixVeloAdulte24h"){
                 $heures = 24;
+                $prix = 18;
             }
         }
             elseif($prix == 0 && filter_input(INPUT_POST, 'prix4') !== NULL){
                 $prix = filter_input(INPUT_POST, 'prix4');
-                $nom = "Vélo Électrique";
-                if($prix == 15){
+                $nom = "VTT Enfant";
+                $locationImage = "loca4.jpg";
+                if($prix == "prixVTTEnfant1h"){
                     $heures = 1;
+                    $prix = 5;
                 }
-                elseif($prix == 20){
+                elseif($prix == "prixVTTEnfant2h"){
                     $heures = 2;
+                    $prix = 8;
                 }
-                elseif($prix == 25){
+                elseif($prix == "prixVTTEnfant5h"){
                     $heures = 5;
+                    $prix = 10;
                 }
-                elseif($prix == 35){
+                elseif($prix == "prixVTTEnfant24h"){
                     $heures = 24;
+                    $prix = 15;
                 }
             }
-
-            $sql="INSERT INTO panier (nom, prix, heures)
-            VALUES ('$nom', '$prix', '$heures')";
+                elseif($prix == 0 && filter_input(INPUT_POST, 'prix5') !== NULL){
+                    $prix = filter_input(INPUT_POST, 'prix5');
+                    $nom = "Remorque Enfant";
+                    $locationImage = "loca5.jpg";
+                    if($prix == "prixRemorqueEnfant1h"){
+                        $heures = 1;
+                        $prix = 5;
+                    }
+                    elseif($prix == "prixRemorqueEnfant2h"){
+                        $heures = 2;
+                        $prix = 8;
+                    }
+                    elseif($prix == "prixRemorqueEnfant5h"){
+                        $heures = 5;
+                        $prix = 10;
+                    }
+                    elseif($prix == "prixRemorqueEnfant24h"){
+                        $heures = 24;
+                        $prix = 15;
+                    }
+                }
+                    elseif($prix == 0 && filter_input(INPUT_POST, 'prix6') !== NULL){
+                        $prix = filter_input(INPUT_POST, 'prix6');
+                        $nom = "Siège Enfant";
+                        $locationImage = "loca6.jpg";
+                        if($prix == "prixSiegeEnfant1h"){
+                            $heures = 1;
+                            $prix = 4;
+                        }
+                        elseif($prix == "prixSiegeEnfant2h"){
+                            $heures = 2;
+                            $prix = 7;
+                        }
+                        elseif($prix == "prixSiegeEnfant5h"){
+                            $heures = 5;
+                            $prix = 9;
+                        }
+                        elseif($prix == "prixSiegeEnfant24h"){
+                            $heures = 24;
+                            $prix = 14;
+                        }
+            }
+            $sql="INSERT INTO panier (nom, prix, heures, locationImage)
+            VALUES ('$nom', $prix, $heures, '$locationImage')";
             $result = $conn->query($sql);
             if ($conn->query($sql) === TRUE) {
                 echo "New record created successfully";
@@ -132,28 +185,40 @@ if($prix == 0 && filter_input(INPUT_POST, 'prix1') !== NULL) {
             $result = $conn->query($sql);
             $idsAll = $result->fetch_assoc();
             $ids = $idsAll['id'];
+            echo $ids;
 if(empty($ids)){
     $prods = array();
+    echo "ids is empty";
 }else{
-    $result = $sql="SELECT * FROM panier WHERE id IN ('.implode(',', $ids).')";
+    $sql = "SELECT * FROM panier";
     $result = $conn->query($sql);
     $prods = $result->fetch_assoc();
-}
-foreach ($prods as $prodss):
-?>
-    <tr>
-    <td><img src="./<?= $prodss->locationImage; ?>" alt=""></td>
-    <td><?= $prodss->nom ?></td>
-    <td><?= $prodss->prix ?>€</td>
-    <td><?= $prods['panier'][$prodss->id]?></td>
-    <td><a href="/panier/panier.php?delPanier=<?= $prodss->id; ?>">Supprimer le produit</a></td>
-    </tr>
-    
-    <?php
-    endforeach;
+    foreach($prods as $wtf){
+        echo $wtf;
+        ?>
+        <img src="toutvabien.gif">
+        <?php
+    }
+    var_dump($prods);
     ?>
-</table>
-<a href="./acceuil-clients.php">Retourner Au catalogue</a>
+    <img src="toutvabien.gif">
+    <?php
+    while($prodss = $result->fetch_assoc()){
+        ?>
+            <tr>
+            <td><img src="<?= $prodss['locationImage'] ?>" height="200px" width="300px"></td>
+            <td><?= $prodss['nom'] ?></td>
+            <td><?= $prodss['prix'] ?>€</td>
+            <td><?= $prodss['heures'] ?> heure(s)</td>
+            <td><?= $prodss['id'] ?></td>
+            </tr>
+            
+            <?php
+            }
+    }
+            ?>
+        </table>
+        <a href="./acceuil1.php">Retourner Au catalogue</a>
 <?php
 require_once ("close1.php");
 ?>
