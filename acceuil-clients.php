@@ -1,3 +1,5 @@
+<?php require_once 'config.php'; ?>
+
 <?php include 'header-client.php'; ?>
 
 <!DOCTYPE html>
@@ -10,7 +12,7 @@
 <body>
 
 <div class="parent2">
-        <div class="logo"><img src="image/logo.png" alt="logo du site" height="200px" width="200px"> </div> 
+        <div class="logo"><img src="image2/logo.png" alt="logo du site" height="200px" width="200px"> </div> 
         <div class="titre" ><h2>Pour 1h ou pour plusieurs jours, on a le vélo qu'il vous faut</h2> </div>
     </div>
 
@@ -20,11 +22,11 @@
     <img name="image" width="1280px" height="782px">
     <script>
      var image = [];
-        image[0] = "image/image1.jpg";
-        image[1] = "image/image2.webp";
-        image[2] = "image/image3.jpg";
-        image[3] = "image/image4.jpg";
-        image[4] = "image/image2.jpg";
+        image[0] = "image2/image1.jpg";
+        image[1] = "image2/image2.webp";
+        image[2] = "image2/image3.jpg";
+        image[3] = "image2/image4.jpg";
+        image[4] = "image2/image2.jpg";
         var i = 0;
         var timer = 3000;
        
@@ -56,20 +58,24 @@
               <div class="conteneur conteneur-1">
                 <h3>Vélo éléctrique</h3>
                 <div class="produits">
-                    <img src="image/img1.jpeg" width="300px" height="200pw" alt="">   
+                    <img src="image2/img1.jpeg" width="300px" height="200pw" alt="">
+                    <?php require_once('config.php');
+                        $sql= "SELECT * FROM locationvelo WHERE id=1";
+                        $locationvelo1 = $conn->query($sql);
+                        foreach($locationvelo1 as $prix1):
+                    ?>
+                  <form action="panier.php" method="post">
+                    <select name="prix1" id="prix1">
+                      <option value="prixVeloElectrique1h">1 heure: <?= $prix1['prix1h'] ?> €</option>
+                      <option value="prixVeloElectrique2h">2 heures: <?= $prix1['prix2h'] ?> €</option>
+                      <option value="prixVeloElectrique5h">5 heures: <?= $prix1['prix5h'] ?> €</option>
+                      <option value="prixVeloElectrique24h">24 heures: <?= $prix1['prix24h'] ?> €</option>
+                    </select>
                 </div>
-                <div class="menu">
-                  <div class="filtre">
-                      <select id="filtre-temps">
-                        <option value="1">1h-15€</option>  <!-- L'élément <option> est utilisé dans les balises <select> pour créer une liste déroulante avec différentes options all" tous " -->
-                        <option value="2">2h-20€</option>
-                        <option value="5">5h-25€</option>
-                        <option value="24">24h-35€</option>
-                      </select>
-                  </div>
-                  </div>
-                <button class="b1">Ajoutez au panier</button>
+                <button class="b1" input type="submit">Ajoutez au panier</button>
               </div>
+              </form>
+                <?php endforeach; ?>   
             </div>
           </div>
           <div class="card2"> 
@@ -77,20 +83,24 @@
               <div class="conteneur conteneur-1">
                 <h3>Vélo de ville</h3>
                 <div class="produits">
-                    <img src="image/img2.jpg" width="300px" height="200pw" alt="">
-                </div>
-                <div class="menu">
-                  <div class="filtre">
-                      <select id="filtre-temps">
-                        <option value="1">1h-6€</option>  
-                        <option value="2">2h-9€</option>
-                        <option value="5">5h-12€</option>
-                        <option value="24">24h-18€</option>
+                    <img src="image2/img2.jpg" width="300px" height="200pw" alt="">
+                    <?php require_once('config.php');
+                      $sql= "SELECT * FROM locationvelo WHERE id=2";
+                      $locationvelo2 = $conn->query($sql);
+                      foreach($locationvelo2 as $prix2):
+                    ?>
+                    <form action="panier.php" method="post">
+                      <select name="prix2" id="prix2">
+                        <option value="prixVeloVille1h">1 heure: <?= $prix2['prix1h'] ?> €</option>
+                        <option value="prixVeloVille2h">2 heures: <?= $prix2['prix2h'] ?> €</option>
+                        <option value="prixVeloVille5h">5 heures: <?= $prix2['prix5h'] ?> €</option>
+                        <option value="prixVeloVille24h">24 heures: <?= $prix2['prix24h'] ?> €</option>
                       </select>
-                  </div>
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <button class="b1" input type="submit">Ajoutez au panier</button>
               </div>
+                    </form>
+                <?php endforeach; ?>    
             </div>
           </div>
           </div>
@@ -99,20 +109,24 @@
               <div class="conteneur conteneur-1">
                 <h3>VTT adulte</h3>
                 <div class="produits">
-                    <img src="image/img3.jpg" width="300px" height="200pw" alt="">
-                </div>
-                <div class="menu">
-                  <div class="filtre">
-                      <select id="filtre-temps">
-                        <option value="1">1h-6€</option>  <
-                        <option value="2">2h-9€</option>
-                        <option value="5">5h-12€</option>
-                        <option value="24">24h-18€</option>
+                    <img src="image2/img3.jpg" width="300px" height="200pw" alt="">
+                    <?php require_once('config.php');
+                        $sql= "SELECT * FROM locationvelo WHERE id=3";
+                        $locationvelo3 = $conn->query($sql);
+                        foreach($locationvelo3 as $prix3):
+                    ?>
+                    <form action="panier.php" method="post">
+                      <select name="prix3" id="prix3">
+                        <option value="prixVTTAdulte1h">1 heure: <?= $prix2['prix1h'] ?> €</option>
+                        <option value="prixVTTAdulte2h">2 heures: <?= $prix2['prix2h'] ?> €</option>
+                        <option value="prixVTTAdulte5h">5 heures: <?= $prix2['prix5h'] ?> €</option>
+                        <option value="prixVTTAdulte24h">24 heures: <?= $prix2['prix24h'] ?> €</option>
                       </select>
-                  </div>
                 </div>
-                <button class="b1">Ajoutez au panier</button>
+                <button class="b1" input type="submit">Ajoutez au panier</button>
               </div>
+                    </form>
+                <?php endforeach;?> 
             </div>
           </div>
     </div>
@@ -128,7 +142,7 @@
               <div class="conteneur conteneur-1">
                 <h3>VTT enfant</h3>
                 <div class="produits">
-                    <img src="image/img4.jpg" width="300px" height="200pw" alt="">
+                    <img src="image2/img4.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <div class="menu">
                   <div class="filtre">
@@ -149,7 +163,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Remorque enfant</h3>
                 <div class="produits">
-                    <img src="image/img5.jpg" width="300px" height="200pw" alt="">
+                    <img src="image2/img5.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <div class="menu">
                   <div class="filtre">
@@ -170,7 +184,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Siège enfant</h3>
                 <div class="produits">
-                    <img src="image/img6.jpg" width="300px" height="200pw" alt="">
+                    <img src="image2/img6.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <div class="menu">
                   <div class="filtre">
@@ -188,6 +202,8 @@
     </div>
     </div>
 </div>
+
+<?php $conn->close(); ?>
 
 <?php include 'footer.php'; ?>
 </body>

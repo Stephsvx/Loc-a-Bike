@@ -58,7 +58,7 @@ grid-row-gap: 0px;
 .header {
     display: flex;
     height: 300px;
-    background-image: url(image/fond2.jpg);
+    background-image: url(image2/fond2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

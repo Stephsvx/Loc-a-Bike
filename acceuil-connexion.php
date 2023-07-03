@@ -10,7 +10,7 @@
 <body>
 
 <div class="parent2">
-        <div class="logo"><img src="image/logo.png" alt="logo du site" height="200px" width="200px"> </div> 
+        <div class="logo"><img src="image2/logo.png" alt="logo du site" height="200px" width="200px"> </div> 
         <div class="titre" ><h2>Pour 1h ou pour plusieurs jours, on a le vélo qu'il vous faut</h2> <br/> <h2>Pour connaitre nos tarifs connectez vous ou inscrivez vous</h2> </div>
     </div>
 
@@ -20,11 +20,11 @@
     <img name="image" width="1280px" height="782px">
     <script>
      var image = [];
-        image[0] = "image/image1.jpg";
-        image[1] = "image/image2.webp";
-        image[2] = "image/image3.jpg";
-        image[3] = "image/image4.jpg";
-        image[4] = "image/image2.jpg";
+        image[0] = "image2/image1.jpg";
+        image[1] = "image2/image2.webp";
+        image[2] = "image2/image3.jpg";
+        image[3] = "image2/image4.jpg";
+        image[4] = "image2/image2.jpg";
         var i = 0;
         var timer = 3000;
        
@@ -56,7 +56,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Vélo éléctrique</h3>
                 <div class="produits">
-                    <img src="image/img1.jpeg" width="300px" height="200pw" alt="">   
+                    <img src="image2/img1.jpeg" width="300px" height="200pw" alt="">   
                 </div>
                 <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
@@ -67,7 +67,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Vélo de ville</h3>
                 <div class="produits">
-                    <img src="image/img2.jpg" width="300px" height="200pw" alt="">
+                    <img src="image2/img2.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
@@ -78,7 +78,7 @@
               <div class="conteneur conteneur-1">
                 <h3>VTT adulte</h3>
                 <div class="produits">
-                    <img src="image/img3.jpg" width="300px" height="200pw" alt="">
+                    <img src="image2/img3.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
@@ -97,7 +97,7 @@
               <div class="conteneur conteneur-1">
                 <h3>VTT enfant</h3>
                 <div class="produits">
-                    <img src="image/img4.jpg" width="300px" height="200pw" alt="">
+                    <img src="image2/img4.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
@@ -108,7 +108,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Remorque enfant</h3>
                 <div class="produits">
-                    <img src="image/img5.jpg" width="300px" height="200pw" alt="">
+                    <img src="image2/img5.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <!--<button class="b1">Ajoutez au panier</button>-->
               </div>
@@ -119,7 +119,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Siège enfant</h3>
                 <div class="produits">
-                    <img src="image/img6.jpg" width="300px" height="200pw" alt="">
+                    <img src="image2/img6.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <!--<button class="b1">Ajoutez au panier</button>-->
               </div>

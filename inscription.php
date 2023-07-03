@@ -40,7 +40,7 @@
 }
 
 body {
-	background-image: url(image/connexion.jpg);
+	background-image: url(image2/connexion.jpg);
 	background-size: cover;
 	height: 100vh;
 	font-family: arial, sans-serif;

@@ -10,9 +10,9 @@
     <div class="footer"> </div>
     <div class="politique">Politique de confidetialitée</div>
     <div class="reseaux"> 
-    <a href="https://www.facebook.com/" target="_blank"><img class="facebook" src="image/facebook.png" alt="logo de facebook"></a>
-    <a href="https://www.instagram.com/" target="_blank"><img class="instagram" src="image/instagram.png" alt="logo d'instagram"></a>
-    <a href="https://twitter.com/?lang=fr" target="_blank"><img class="twitter" src="image/twitter.png" alt="logo de twitter"></a>
+    <a href="https://www.facebook.com/" target="_blank"><img class="facebook" src="image2/facebook.png" alt="logo de facebook"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img class="instagram" src="image2/instagram.png" alt="logo d'instagram"></a>
+    <a href="https://twitter.com/?lang=fr" target="_blank"><img class="twitter" src="image2/twitter.png" alt="logo de twitter"></a>
     </div>
     <div class="horaire">Lun : 14h-19h<br/>Mar à Sam<br/>9h-13h 14h-19h </div>
     <div class="coordonnees">Tel : 0302010405<br/>Mail : loc-a-bike@gmail.com</div>
@@ -49,7 +49,7 @@ grid-row-gap: 0px;
 .footer {
     display: flex;
     height: 300px;
-    background-image: url(image/fond.jpeg);
+    background-image: url(image2/fond.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }

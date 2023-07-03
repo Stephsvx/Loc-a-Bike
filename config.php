@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "locabikedb";
+$dbname = "locabikedb1";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
