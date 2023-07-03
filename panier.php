@@ -15,7 +15,6 @@
         <th>Produit</th>
         <th>Prix</th>
         <th>Heures</th>
-        <th>ID</th>
     </tr>
 <?php
 $prix = 0;
@@ -175,7 +174,7 @@ VALUES ('$nom', $prix, $heures, '$locationImage')";
 $result = $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    //echo "New record created successfully";
 }
 
 else {
@@ -186,7 +185,7 @@ $result = $sql="SELECT * FROM panier";
 $result = $conn->query($sql);
 $idsAll = $result->fetch_assoc();
 $ids = $idsAll['id'];
-echo $ids;
+//echo $ids;
 
 if(empty($ids)){
     $prods = array();
@@ -198,21 +197,17 @@ else {
     $sql = "SELECT * FROM panier";
     $result = $conn->query($sql);
     $prods = $result->fetch_assoc();
-    foreach($prods as $wtf){
-        echo $wtf;
+    //foreach($prods as $wtf){
+       // echo $wtf;
 ?>
         
-<?php } ?>
-
-
 <?php while($prodss = $result->fetch_assoc()){ ?>
 
     <tr>
         <td><img src="<?= $prodss['locationImage'] ?>" height="200px" width="300px"></td>
         <td><?= $prodss['nom'] ?></td>
         <td><?= $prodss['prix'] ?>€</td>
-        <td><?= $prodss['heures'] ?> heure(s)</td>
-        <td><?= $prodss['id'] ?></td>
+        <td><?= $prodss['heures'] ?> heure(s)</td>  
     </tr>
 
 <?php }} ?>
