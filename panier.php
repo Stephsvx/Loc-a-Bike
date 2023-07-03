@@ -11,6 +11,9 @@
     <title>Loc'A Bike</title>
 </head>
 <body>
+    <a href="#" class="link">Boutique</a>
+
+   
     
 </body>
 <?php include 'footer.php'; ?>

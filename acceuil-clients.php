@@ -56,7 +56,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Vélo éléctrique</h3>
                 <div class="produits">
-                    <img src="image/electrique.jpeg" width="300px" height="200pw" alt="">   
+                    <img src="image/img1.jpeg" width="300px" height="200pw" alt="">   
                 </div>
                 <div class="menu">
                   <div class="filtre">
@@ -77,7 +77,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Vélo de ville</h3>
                 <div class="produits">
-                    <img src="image/ville.jpg" width="300px" height="200pw" alt="">
+                    <img src="image/img2.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <div class="menu">
                   <div class="filtre">
@@ -99,7 +99,7 @@
               <div class="conteneur conteneur-1">
                 <h3>VTT adulte</h3>
                 <div class="produits">
-                    <img src="image/vtt.jpg" width="300px" height="200pw" alt="">
+                    <img src="image/img3.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <div class="menu">
                   <div class="filtre">
@@ -128,7 +128,7 @@
               <div class="conteneur conteneur-1">
                 <h3>VTT enfant</h3>
                 <div class="produits">
-                    <img src="image/vtt enfant.jpg" width="300px" height="200pw" alt="">
+                    <img src="image/img4.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <div class="menu">
                   <div class="filtre">
@@ -149,7 +149,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Remorque enfant</h3>
                 <div class="produits">
-                    <img src="image/remorque.jpg" width="300px" height="200pw" alt="">
+                    <img src="image/img5.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <div class="menu">
                   <div class="filtre">
@@ -170,7 +170,7 @@
               <div class="conteneur conteneur-1">
                 <h3>Siège enfant</h3>
                 <div class="produits">
-                    <img src="image/siege.jpg" width="300px" height="200pw" alt="">
+                    <img src="image/img6.jpg" width="300px" height="200pw" alt="">
                 </div>
                 <div class="menu">
                   <div class="filtre">

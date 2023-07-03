@@ -1,12 +1,15 @@
 <?php
 
-require_once 'panier.php';
+require_once 'config.php';
 
 
 $sql = "SELECT * FROM locationvelo";
 $result = $conn->query($sql);
 
 // verif
+
+
+
 
 if ($result->num_rows > 0) {
 
